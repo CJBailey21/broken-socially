@@ -65,15 +65,5 @@ api_router.delete('/thoughts/:thoughtId', async (req, res) => {
       res.send(thought)
 })
 
-// FRIENDS 
-api_router.post('/users/:userId/friends/:friendId', async (req, res) => {
-
-});
-
-api_router.delete('/users/:userId/friends/:friendId', async (req, res) => {
-
-
-})
-
 
 module.exports = api_router;
