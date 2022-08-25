@@ -1,5 +1,6 @@
 const api_router = require('express').Router();
-const { User, Thought } = require('../models');
+const User = require('../models/User');
+const Thought = require('../models/Thought')
 //get all
 api_router.get('/users', async (req, res) => {
     const users = await User.find()
@@ -14,7 +15,7 @@ api_router.get('/users/:id', (req, res) => {
 });
 
 //create user
-api_router.post('/users', (req, res) => {
+api_router.post('/users', async (req, res) => {
     const user = await User.create(req.body);
   
     res.send(user);

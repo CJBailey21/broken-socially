@@ -1,4 +1,5 @@
-import {Schema, model, SchemaTypes} from 'mongoose'
+const {Schema, model, SchemaTypes} = require('mongoose')
+
 
 
 const thoughtSchema = new Schema({

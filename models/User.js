@@ -1,6 +1,6 @@
-import {Schema, model, SchemaTypes} from 'mongoose'
-import Thoughts from './Thought'
-import { isEmail } from 'validator'
+const {Schema, model, SchemaTypes} = require('mongoose')
+const Thought = require('./Thought')
+const { isEmail } = require('validator')
 
 
 const userSchema = new Schema({

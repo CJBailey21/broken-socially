@@ -1,5 +1,5 @@
-import { ObjectID } from 'bson'
-import {Schema, model, SchemaTypes} from 'mongoose'
+const { ObjectID } = require('bson')
+const {Schema, model, SchemaTypes} = require('mongoose')
 
 
 const reactionSchema = new Schema({
